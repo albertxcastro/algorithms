@@ -22,18 +22,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Algorithms.py" />
-    <Compile Include="Classes\BubbleSort.py">
+    <Compile Include="PathFinding\AStar.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Classes\QuickSort.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Classes\Sortable.py">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Sort\BubbleSort.py" />
+    <Compile Include="Sort\QuickSort.py" />
+    <Compile Include="Sort\Sortable.py" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\" />
+    <Folder Include="PathFinding\" />
+    <Folder Include="Sort\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

@@ -1,4 +1,4 @@
-from Classes.Sortable import Sortable
+from Sort.Sortable import Sortable
 class BubbleSort(Sortable):
     """
     This class implements the Bubble Sort algorithm

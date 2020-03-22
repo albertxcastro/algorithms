@@ -1,4 +1,4 @@
-from Classes.Sortable import Sortable
+from Sort.Sortable import Sortable
 class QuickSort(Sortable):
     """
     This class implements the Quick Sort algorithm
