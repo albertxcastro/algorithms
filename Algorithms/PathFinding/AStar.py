@@ -60,7 +60,9 @@ class AStar(object):
             print(f"current Node is ({q.point} with G: {q.gCost}, H: {q.hCost}, and F: {q.fCost})")
             self.matrix[q.point[0]][q.point[1]] = '*'
             self.printMatrix(self.matrix)
+
             if q.value == endNode.value:
+                # The algorithm found the ending point, the path is contained in the list of closed nodes
                 return
 
             self.open.pop(0)
@@ -85,11 +87,6 @@ class AStar(object):
 
                 if not inOpen and not inClosed:
                     self.open.append(neighbor)
-
-
-                # neighbor.gCost = q.gCost + distance between q and neighbor # already done
-                # neighbor.hcost = distance from goal to neighbor # already done using euclidian heuristics
-                # neighbor.fCost = neighbor.gCost + neighbor.hCost # already done
 
 class Node():
     gCost = 0
