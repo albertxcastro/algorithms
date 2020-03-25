@@ -26,6 +26,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Sort\BubbleSort.py" />
+    <Compile Include="Sort\MergeSort.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Sort\QuickSort.py" />
     <Compile Include="Sort\Sortable.py" />
   </ItemGroup>
